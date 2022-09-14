@@ -1,0 +1,89 @@
+h1 {
+    color: rgb(0, 0, 255);
+    font-size: 3em;
+    justify-content: center;
+    text-align:center;
+    font-family:'Courier New', Courier, monospace
+}
+
+h3 {
+    color:rgb(0, 100, 255);
+    font-size: 1em;
+    justify-content: center;
+    text-align:center;
+    font-family:'Courier New', Courier, monospace
+}
+.inputContainer {
+    display: table;
+    width: 100%;
+}
+
+.label {
+    float: left;
+    margin:10px;
+    font-family:'Courier New', Courier, monospace;
+}
+.textbox {
+    display: block;
+    overflow: hidden;
+    padding: 0 4px 0 6px;
+    position:absolute;
+    left:10%;
+    margin:10px;
+    font-family:'Courier New', Courier, monospace;
+   
+}
+.input {
+    display:block;
+    width: 500px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+.newMeme {
+    display:inline-block;
+    position: relative;
+    width: 320px;
+    height:400px;
+    margin:50px;
+}
+
+.newMemeTopText {
+    z-index:2;
+    position:absolute;
+    margin:auto;
+    top: 20px;
+    left : 0;
+    right : 0;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-size:  50px;
+    word-wrap: break-word
+}
+.newMemeBottomText {
+    z-index:2;
+    position:absolute;
+    left : 0;
+    right : 0;
+    margin:auto;
+    bottom: 20px;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 50px;
+    word-wrap: break-word
+}
+
+.newMeme img {
+    z-index:1;
+    position:relative;
+    width: 320px;
+    height:400px;
+}
+
+
+.memeContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
