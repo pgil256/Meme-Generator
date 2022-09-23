@@ -1,18 +1,25 @@
+body {
+    background-color:rgba(255, 218, 185, 0.5);
+}
+
 h1 {
-    color: rgb(0, 0, 255);
+    color: rgba(0, 0, 255, 0.7);
     font-size: 3em;
     justify-content: center;
     text-align:center;
-    font-family:'Courier New', Courier, monospace
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
+    font-style: bold;
 }
 
 h3 {
-    color:rgb(0, 100, 255);
-    font-size: 1em;
+    color:rgba(0, 0, 255,0.6);
+    font-size: 2em;
     justify-content: center;
     text-align:center;
-    font-family:'Courier New', Courier, monospace
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
 }
+
 .inputContainer {
     display: table;
     width: 100%;
@@ -22,30 +29,60 @@ h3 {
     float: left;
     margin:10px;
     font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
 }
 .textbox {
     display: block;
     overflow: hidden;
-    padding: 0 4px 0 6px;
+    padding: 0 6px 0 6px;
     position:absolute;
-    left:10%;
+    left:20%;
     margin:10px;
     font-family:'Courier New', Courier, monospace;
-   
+    font-size:30px;
 }
 .input {
     display:block;
-    width: 500px;
+    width: 800px;
     font-family:'Courier New', Courier, monospace;
+    font-size: 20px;;
 }
 
+#buttonContainer{
+    position:absolute;
+    right: 15%;
+    top: 30%;
+    display:block;
+    padding:10px;
+    width: 60px;
+    height: 20px;
+}
+
+#makeMeme{
+    font-family:'Courier New', Courier, monospace;
+    font-size:25px;
+    text-decoration:bold;
+    border-radius: 3px;
+    border-color: black;
+    width: 200px;
+    height: 50px;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: translateX(800px);
+    transition: transform 2s ease-in-out 0.25s;
+}
 
 .newMeme {
     display:inline-block;
     position: relative;
-    width: 320px;
-    height:400px;
-    margin:50px;
+    width: 400px;
+    height:450px;
+    margin: 40px;
+    border: 2px solid grey;
+    border-left-width:5px;
+    transition: transform 4s ease-in;
 }
 
 .newMemeTopText {
@@ -56,9 +93,10 @@ h3 {
     left : 0;
     right : 0;
     text-align: center;
-    font-family:'Courier New', Courier, monospace;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size:  50px;
-    word-wrap: break-word
+    word-wrap: break-word;
+    text-transform:uppercase;
 }
 .newMemeBottomText {
     z-index:2;
@@ -68,9 +106,10 @@ h3 {
     margin:auto;
     bottom: 20px;
     text-align: center;
-    font-family:'Courier New', Courier, monospace;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 50px;
-    word-wrap: break-word
+    word-wrap: break-word;
+    text-transform:uppercase;
 }
 
 .newMeme img {
